@@ -17,7 +17,7 @@ BuildRequires : buildreq-distutils3
 Provides: platformdirs
 Provides: platformdirs-python
 Provides: platformdirs-python3
-BuildRequires : pluggy
+BuildRequires : pypi(pluggy)
 BuildRequires : py-python
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
@@ -26,7 +26,7 @@ BuildRequires : pytest
 BuildRequires : setuptools
 BuildRequires : setuptools_scm
 BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(virtualenv)
 
 %description
 The problem
