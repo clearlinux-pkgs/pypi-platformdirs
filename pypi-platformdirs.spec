@@ -4,7 +4,7 @@
 #
 Name     : pypi-platformdirs
 Version  : 2.4.1
-Release  : 15
+Release  : 16
 URL      : https://files.pythonhosted.org/packages/be/00/bd080024010e1652de653bd61181e2dfdbef5fa73bfd32fec4c808991c31/platformdirs-2.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/be/00/bd080024010e1652de653bd61181e2dfdbef5fa73bfd32fec4c808991c31/platformdirs-2.4.1.tar.gz
 Summary  : A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
@@ -14,19 +14,14 @@ Requires: pypi-platformdirs-license = %{version}-%{release}
 Requires: pypi-platformdirs-python = %{version}-%{release}
 Requires: pypi-platformdirs-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: platformdirs
-Provides: platformdirs-python
-Provides: platformdirs-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
+BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
 BuildRequires : pypi(wheel)
-BuildRequires : pytest
-BuildRequires : setuptools
-BuildRequires : setuptools_scm
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 The problem
@@ -70,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641469221
+export SOURCE_DATE_EPOCH=1641944147
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
