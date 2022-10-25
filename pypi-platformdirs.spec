@@ -4,7 +4,7 @@
 #
 Name     : pypi-platformdirs
 Version  : 2.5.2
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/ff/7b/3613df51e6afbf2306fc2465671c03390229b55e3ef3ab9dd3f846a53be6/platformdirs-2.5.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ff/7b/3613df51e6afbf2306fc2465671c03390229b55e3ef3ab9dd3f846a53be6/platformdirs-2.5.2.tar.gz
 Summary  : A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
