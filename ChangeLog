@@ -1,6 +1,25 @@
 platformdirs Changelog
 ======================
 
+platformdirs 2.6.0 (2022-12-06)
+-------------------------------
+- **BREAKING** Correct the log directory on Linux/Unix from
+  XDG_CACHE_HOME to XDG_STATE_HOME per the XDG spec
+
+platformdirs 2.5.4 (2022-11-12)
+-------------------------------
+- Fix licesing metadata
+
+platformdirs 2.5.3 (2022-11-06)
+-------------------------------
+- Support 3.11
+- Bump dependencies
+
+platformdirs 2.5.2 (2022-04-18)
+-------------------------------
+- Move packaging to hatcling from setuptools
+- Treat android shells as unix
+
 platformdirs 2.5.2 (2022-04-18)
 -------------------------------
 - Move packaging to hatcling from setuptools
