@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-platformdirs
-Version  : 3.2.0
-Release  : 37
-URL      : https://files.pythonhosted.org/packages/15/04/3f882b46b454ab374ea75425c6f931e499150ec1385a73e55b3f45af615a/platformdirs-3.2.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/15/04/3f882b46b454ab374ea75425c6f931e499150ec1385a73e55b3f45af615a/platformdirs-3.2.0.tar.gz
+Version  : 3.3.0
+Release  : 38
+URL      : https://files.pythonhosted.org/packages/d8/8b/01ed3bb2ea4f7cb7c60f9a0f8aca9fde9c487b368ef6cc3f839ee5029b7c/platformdirs-3.3.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/d8/8b/01ed3bb2ea4f7cb7c60f9a0f8aca9fde9c487b368ef6cc3f839ee5029b7c/platformdirs-3.3.0.tar.gz
 Summary  : A small Python package for determining appropriate platform-specific dirs, e.g. a "user data dir".
 Group    : Development/Tools
 License  : MIT
@@ -56,10 +56,10 @@ python3 components for the pypi-platformdirs package.
 
 
 %prep
-%setup -q -n platformdirs-3.2.0
-cd %{_builddir}/platformdirs-3.2.0
+%setup -q -n platformdirs-3.3.0
+cd %{_builddir}/platformdirs-3.3.0
 pushd ..
-cp -a platformdirs-3.2.0 buildavx2
+cp -a platformdirs-3.3.0 buildavx2
 popd
 
 %build
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680134762
+export SOURCE_DATE_EPOCH=1682453268
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
