@@ -1,5 +1,5 @@
 PKG_NAME := pypi-platformdirs
-URL = https://files.pythonhosted.org/packages/5e/ac/26d3d2a99b5fc84852229fc8470ae612595900f7f52c78468fd3f3a15a27/platformdirs-3.4.0.tar.gz
+URL = https://files.pythonhosted.org/packages/91/17/3836ffe140abb245726d0e21c5b9b984e2569e7027c20d12e969ec69bd8a/platformdirs-3.5.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
