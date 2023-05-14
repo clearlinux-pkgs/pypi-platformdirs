@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-platformdirs
-Version  : 3.5.0
-Release  : 40
-URL      : https://files.pythonhosted.org/packages/91/17/3836ffe140abb245726d0e21c5b9b984e2569e7027c20d12e969ec69bd8a/platformdirs-3.5.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/91/17/3836ffe140abb245726d0e21c5b9b984e2569e7027c20d12e969ec69bd8a/platformdirs-3.5.0.tar.gz
+Version  : 3.5.1
+Release  : 41
+URL      : https://files.pythonhosted.org/packages/9c/0e/ae9ef1049d4b5697e79250c4b2e72796e4152228e67733389868229c92bb/platformdirs-3.5.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/9c/0e/ae9ef1049d4b5697e79250c4b2e72796e4152228e67733389868229c92bb/platformdirs-3.5.1.tar.gz
 Summary  : A small Python package for determining appropriate platform-specific dirs, e.g. a "user data dir".
 Group    : Development/Tools
 License  : MIT
@@ -15,9 +15,15 @@ Requires: pypi-platformdirs-license = %{version}-%{release}
 Requires: pypi-platformdirs-python = %{version}-%{release}
 Requires: pypi-platformdirs-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(hatch_vcs)
 BuildRequires : pypi(hatchling)
+BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -56,10 +62,10 @@ python3 components for the pypi-platformdirs package.
 
 
 %prep
-%setup -q -n platformdirs-3.5.0
-cd %{_builddir}/platformdirs-3.5.0
+%setup -q -n platformdirs-3.5.1
+cd %{_builddir}/platformdirs-3.5.1
 pushd ..
-cp -a platformdirs-3.5.0 buildavx2
+cp -a platformdirs-3.5.1 buildavx2
 popd
 
 %build
@@ -67,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682974296
+export SOURCE_DATE_EPOCH=1684029816
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
