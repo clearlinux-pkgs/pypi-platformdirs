@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-platformdirs
-Version  : 4.3.0
-Release  : 58
-URL      : https://files.pythonhosted.org/packages/1a/3a/bb3484eda58c912cdd445870fb95da9dc5c20bf067b2ce9df6db9b82be2f/platformdirs-4.3.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/1a/3a/bb3484eda58c912cdd445870fb95da9dc5c20bf067b2ce9df6db9b82be2f/platformdirs-4.3.0.tar.gz
+Version  : 4.3.2
+Release  : 59
+URL      : https://files.pythonhosted.org/packages/75/a0/d7cab8409cdc7d39b037c85ac46d92434fb6595432e069251b38e5c8dd0e/platformdirs-4.3.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/75/a0/d7cab8409cdc7d39b037c85ac46d92434fb6595432e069251b38e5c8dd0e/platformdirs-4.3.2.tar.gz
 Summary  : A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.
 Group    : Development/Tools
 License  : MIT
@@ -28,8 +28,14 @@ BuildRequires : pypi(setuptools_scm)
 %description
 The problem
 ===========
+.. image:: https://badge.fury.io/py/platformdirs.svg
+:target: https://badge.fury.io/py/platformdirs
+.. image:: https://img.shields.io/pypi/pyversions/platformdirs.svg
+:target: https://pypi.python.org/pypi/platformdirs/
 .. image:: https://github.com/platformdirs/platformdirs/actions/workflows/check.yml/badge.svg
 :target: https://github.com/platformdirs/platformdirs/actions
+.. image:: https://static.pepy.tech/badge/platformdirs/month
+:target: https://pepy.tech/project/tox-uv
 
 %package license
 Summary: license components for the pypi-platformdirs package.
@@ -59,13 +65,13 @@ python3 components for the pypi-platformdirs package.
 
 
 %prep
-%setup -q -n platformdirs-4.3.0
-cd %{_builddir}/platformdirs-4.3.0
+%setup -q -n platformdirs-4.3.2
+cd %{_builddir}/platformdirs-4.3.2
 pushd ..
-cp -a platformdirs-4.3.0 buildavx2
+cp -a platformdirs-4.3.2 buildavx2
 popd
 pushd ..
-cp -a platformdirs-4.3.0 buildapx
+cp -a platformdirs-4.3.2 buildapx
 popd
 
 %build
@@ -73,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1725726951
+export SOURCE_DATE_EPOCH=1725892078
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
