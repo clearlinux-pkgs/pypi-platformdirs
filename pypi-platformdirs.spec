@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-platformdirs
-Version  : 4.3.3
-Release  : 60
-URL      : https://files.pythonhosted.org/packages/f5/19/f7bee3a71decedd8d7bc4d3edb7970b8e899f3caef257b0f0d623f2f7b11/platformdirs-4.3.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/f5/19/f7bee3a71decedd8d7bc4d3edb7970b8e899f3caef257b0f0d623f2f7b11/platformdirs-4.3.3.tar.gz
+Version  : 4.3.6
+Release  : 61
+URL      : https://files.pythonhosted.org/packages/13/fc/128cc9cb8f03208bdbf93d3aa862e16d376844a14f9a0ce5cf4507372de4/platformdirs-4.3.6.tar.gz
+Source0  : https://files.pythonhosted.org/packages/13/fc/128cc9cb8f03208bdbf93d3aa862e16d376844a14f9a0ce5cf4507372de4/platformdirs-4.3.6.tar.gz
 Summary  : A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.
 Group    : Development/Tools
 License  : MIT
@@ -32,10 +32,10 @@ The problem
 :target: https://badge.fury.io/py/platformdirs
 .. image:: https://img.shields.io/pypi/pyversions/platformdirs.svg
 :target: https://pypi.python.org/pypi/platformdirs/
-.. image:: https://github.com/platformdirs/platformdirs/actions/workflows/check.yml/badge.svg
+.. image:: https://github.com/tox-dev/platformdirs/actions/workflows/check.yaml/badge.svg
 :target: https://github.com/platformdirs/platformdirs/actions
 .. image:: https://static.pepy.tech/badge/platformdirs/month
-:target: https://pepy.tech/project/tox-uv
+:target: https://pepy.tech/project/platformdirs
 
 %package license
 Summary: license components for the pypi-platformdirs package.
@@ -65,13 +65,13 @@ python3 components for the pypi-platformdirs package.
 
 
 %prep
-%setup -q -n platformdirs-4.3.3
-cd %{_builddir}/platformdirs-4.3.3
+%setup -q -n platformdirs-4.3.6
+cd %{_builddir}/platformdirs-4.3.6
 pushd ..
-cp -a platformdirs-4.3.3 buildavx2
+cp -a platformdirs-4.3.6 buildavx2
 popd
 pushd ..
-cp -a platformdirs-4.3.3 buildapx
+cp -a platformdirs-4.3.6 buildapx
 popd
 
 %build
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1726525632
+export SOURCE_DATE_EPOCH=1726672034
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
