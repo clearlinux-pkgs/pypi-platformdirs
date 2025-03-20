@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-platformdirs
-Version  : 4.3.6
-Release  : 64
-URL      : https://files.pythonhosted.org/packages/13/fc/128cc9cb8f03208bdbf93d3aa862e16d376844a14f9a0ce5cf4507372de4/platformdirs-4.3.6.tar.gz
-Source0  : https://files.pythonhosted.org/packages/13/fc/128cc9cb8f03208bdbf93d3aa862e16d376844a14f9a0ce5cf4507372de4/platformdirs-4.3.6.tar.gz
+Version  : 4.3.7
+Release  : 65
+URL      : https://files.pythonhosted.org/packages/b6/2d/7d512a3913d60623e7eb945c6d1b4f0bddf1d0b7ada5225274c87e5b53d1/platformdirs-4.3.7.tar.gz
+Source0  : https://files.pythonhosted.org/packages/b6/2d/7d512a3913d60623e7eb945c6d1b4f0bddf1d0b7ada5225274c87e5b53d1/platformdirs-4.3.7.tar.gz
 Summary  : A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`.
 Group    : Development/Tools
 License  : MIT
@@ -65,13 +65,13 @@ python3 components for the pypi-platformdirs package.
 
 
 %prep
-%setup -q -n platformdirs-4.3.6
-cd %{_builddir}/platformdirs-4.3.6
+%setup -q -n platformdirs-4.3.7
+cd %{_builddir}/platformdirs-4.3.7
 pushd ..
-cp -a platformdirs-4.3.6 buildavx2
+cp -a platformdirs-4.3.7 buildavx2
 popd
 pushd ..
-cp -a platformdirs-4.3.6 buildapx
+cp -a platformdirs-4.3.7 buildapx
 popd
 
 %build
@@ -79,7 +79,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740084422
+export SOURCE_DATE_EPOCH=1742429410
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
